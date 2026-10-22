@@ -1,5 +1,5 @@
-SRC_NAME=aria2-1.35.0
-SRC_URL=https://github.com/aria2/aria2/releases/download/release-1.35.0/aria2-1.35.0.tar.xz
+SRC_NAME=aria2-1.37.0
+SRC_URL=https://github.com/aria2/aria2/releases/download/release-1.37.0/aria2-1.37.0.tar.xz
 
 SRC_ARIA_NG_NAME=AriaNg-1.1.7-AllInOne
 SRC_ARIA_NG_URL=https://github.com/mayswind/AriaNg/releases/download/1.1.7/AriaNg-1.1.7-AllInOne.zip
