@@ -9,3 +9,29 @@
  
  dist_doc_DATA = \
  	README \
+--- a/configure.ac
++++ b/configure.ac
+@@ -870,21 +870,12 @@
+ fi
+ 
+ dnl
+-dnl Depend on libcap-ng on Linux
++dnl libcap-ng is not needed (not used by any source file),
++dnl skip the check for embedded builds
+ dnl
+ case "$host" in
+ 	*-*-linux*)
+-		# We require pkg-config
+-		PKG_CHECK_MODULES([LIBCAPNG],
+-				  [libcap-ng],
+-				  [],
+-				  [AC_MSG_ERROR([libcap-ng package not found. Is the development package and pkg-config ${pkg_config_found} installed?])]
+-		)
+ 		AC_CHECK_HEADER([sys/prctl.h],,[AC_MSG_ERROR([sys/prctl.h not found!])])
+-
+-		CFLAGS="${CFLAGS} ${LIBCAPNG_CFLAGS}"
+-		LIBS="${LIBS} ${LIBCAPNG_LIBS}"
+-		AC_DEFINE(HAVE_LIBCAPNG, 1, [Enable libcap-ng support])
+ 	;;
+ esac
+ 
