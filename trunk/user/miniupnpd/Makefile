@@ -10,7 +10,7 @@ ENABLE_IPV6:=0
 IPTABLESPATH=$(ROOTDIR)/user/iptables/$(IPT_VERSION)
 
 all:
-	cd $(SRC_NAME) && PKG_CONFIG= ./configure --firewall=iptables --iptablespath=$(IPTABLESPATH)
+	cd $(SRC_NAME) && ./configure --firewall=iptables --iptablespath=$(IPTABLESPATH)
 	$(MAKE) -f Makefile.linux -C $(SRC_NAME)
 
 clean:
