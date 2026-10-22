@@ -1,5 +1,5 @@
-SRC_NAME = iperf-3.7
-SRC_URL = https://downloads.es.net/pub/iperf/iperf-3.7.tar.gz
+SRC_NAME = iperf-3.22
+SRC_URL = https://github.com/esnet/iperf/releases/download/3.22/iperf-3.22.tar.gz
 THISDIR = $(shell pwd)
 
 all: download_test extract_test config_test
