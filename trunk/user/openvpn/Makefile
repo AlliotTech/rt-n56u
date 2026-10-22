@@ -28,6 +28,7 @@ configure:
 	./configure \
 		--prefix=/usr \
 		--disable-debug \
+		--disable-dco \
 		--disable-plugins \
 		--disable-pkcs11 \
 		--disable-ofb-cfb \
